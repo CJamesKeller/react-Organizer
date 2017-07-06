@@ -6,6 +6,10 @@ For many years, I have used a set of eight facets to help organize my life, as
 well as to develop new ideas. I wanted to make this an app, to facilitate
 continued use of this system digitally.
 
+## Status
+
+Currently in progress. Not suitable for use.
+
 ## Setup
 
 Just run `npm install`, and then `npm start`!

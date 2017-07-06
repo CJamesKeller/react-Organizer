@@ -1,18 +1,32 @@
-.App-logo {
-  height: 80px;
+body {
+  background-image: url("octahedron.png");
+  background-repeat: no-repeat;
+  background-position: center 100px;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 .App-header {
   background-color: #dfefff;
-  height: 100px;
-  padding: 20px;
-}
-
-.App-main, .App-header {
+  height: 120px;
+  display: block;
   text-align: center;
 }
 
-.App-main, .App-intro {
+.App-logo {
+  height: 120px;
+  float: left;
+  position: relative;
+}
+
+.App-greeting {
+  line-height:120px; width:100%; height:120px; font-size:1em;
+  left: -80px;
+  position: relative;
+  text-align: center;
+}
+
+.App-main {
   font-size: large;
   padding-left: 20px;
 }
