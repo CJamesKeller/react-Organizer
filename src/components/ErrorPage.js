@@ -1,3 +1,3 @@
 import React from "react";
 
-export default Facet;
+export default ErrorPage;

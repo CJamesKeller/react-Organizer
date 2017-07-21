@@ -1,22 +1,19 @@
 import React from "react";
-import logo from "../assets/octahedron.png";
-import "./App.css";
+import { Route, Switch } from "react-router-dom";
+
+import Home from "Home";
+import Person from "Person";
+import Tetrahedron from "Tetrahedron";
+import ErrorPage from "ErrorPage";
 
 const App = () => {
     return (
-        <div className="App">
-            <div className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <span className="App-greeting"><h1>octahedron</h1></span>
-            </div>
-            <div className="App-main">
-                <div>
-                    <p className="App-intro">
-              To get started, begin adding notes or tasks to your facets.
-                    </p>
-                </div>
-            </div>
-        </div>
+        <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/person/:personId" render={ ({ match }) => <Person id={match.params.personId}/> } />
+            <Route path="/tetrahedron/:tetId" render={ ({ match }) => <Tetrahedron id={match.params.tetId}/> } />
+            <Route component={ErrorPage} />
+        </Switch>
     );
 };
 
