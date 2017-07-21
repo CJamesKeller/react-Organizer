@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./octahedron.png";
+import logo from "../assets/octahedron.png";
 import "./App.css";
 
 const App = () => {
