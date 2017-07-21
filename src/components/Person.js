@@ -1,7 +1,20 @@
 import React from 'react';
 
-const HouseCard = () => (
-    <p>paraHere</p>
-);
+import EditPersonForm from "./EditPersonForm";
 
-export default HouseCard;
+const Person = () => {
+    return (
+        <div>
+            <div className="infoWrapper">
+                <h1>{ props.name }</h1>
+                <p>{ props.info }</p>
+                <button>Edit</button>
+            </div>
+            <div className="editWrapper">
+                <EditPersonForm />
+            </div>
+        </div>
+    );
+};
+
+export default Person;
