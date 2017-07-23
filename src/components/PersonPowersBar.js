@@ -7,6 +7,7 @@ const PersonPowersBar = () => {
     return (
         <div>
             <Action />
+            <hr />
             <NewActionForm />
         </div>
     );
