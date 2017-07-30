@@ -1,18 +1,17 @@
 import React from "react";
+import { Button, Card, Input } from "react-materialize";
 
 const NewPersonForm = () => {
     return (
         <div>
-            <h2>Sign Up</h2>
-            <form>
-                <label for="email">email</label>
-                <input id="email" type="text" />
-                <label for="password">password</label>
-                <input id="password" type="password" />
-                <label for="pwAgain">again</label>
-                <input id="pwAgain" type="password" />
-                <button>Sign Up</button>
-            </form>
+            <Card title="Sign up">
+                <form>
+                    <Input id="email" type="text" placeholder="email" />
+                    <Input id="password" type="password" placeholder="password" />
+                    <Input id="pwAgain" type="password" placeholder="re-enter password" />
+                    <Button>Sign Up</Button>
+                </form>
+            </Card>
         </div>
     );
 };
